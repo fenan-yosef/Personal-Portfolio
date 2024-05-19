@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  --white: #fff;
+  --bg-color: #e7e7e7;
+  --black: #000;
+  --green: #4ecf57;
+  --orange: #34919c;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin: 0 1.5rem;
+  /* border: red solid; */
+  height: 50px;
+}
+
+header ul {
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  background-color: var(--white);
+  padding: 10px;
+}
+
+header li {
+  margin: 0 4rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+header button {
+  margin: 0 2rem;
+  width: 8rem;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--green);
+  border: none;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.home {
+  /* border: red solid; */
+  height: 100vh;
+}
+
+.purple {
+  z-index: 1;
+  background-image: url("../images/grid.png");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  top: 200px;
+  width: 70rem;
+  height: 380px;
+  background-color: var(--orange);
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.title {
+  padding-left: 4rem;
+  z-index: 5;
+  color: var(--white);
+  font-size: 90px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 140px;
+}
+
+.fenan {
+  /* border: red solid; */
+  width: 55rem;
+  z-index: 4;
+  position: absolute;
+  top: 170px;
+  right: 0;
+}
+
+.overview {
+  z-index: 1;
+  background-color: var(--white);
+  position: relative;
+  top: 140px;
+  width: 60%;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  padding: 1.5rem;
+}
