@@ -6,14 +6,50 @@
   --bg-color: #e7e7e7;
   --black: #000;
   --green: #4ecf57;
-  --orange: #34919c;
+  --wierd-green: #34919c;
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 10px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #0c0791;
+} */
 
 body {
   overflow-x: hidden;
+  width: 100vw;
   margin: 0;
   background-color: var(--bg-color);
   font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  background-image: url("../images/grid.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.left-border {
+  border-top-left-radius: 85px;
+  border-bottom-left-radius: 85px;
+}
+
+.right-border {
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 
 header {
@@ -28,7 +64,7 @@ header {
 }
 
 header img {
-  margin: 0 1.5rem;
+  margin: 1rem;
   /* border: red solid; */
   height: 50px;
 }
@@ -67,20 +103,16 @@ header button {
 .home {
   /* border: red solid; */
   height: 100vh;
+  width: 100%;
 }
 
 .purple {
   z-index: 1;
-  background-image: url("../images/grid.png");
-  background-size: cover;
   position: relative;
-  background-position: center;
   top: 200px;
-  width: 70rem;
+  width: 70%;
   height: 380px;
-  background-color: var(--orange);
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
+  background-color: var(--wierd-green);
 }
 
 .title {
@@ -96,11 +128,13 @@ header button {
 
 .fenan {
   /* border: red solid; */
-  width: 55rem;
+  width: 100%;
+  max-width: 55rem;
   z-index: 4;
   position: absolute;
   top: 170px;
   right: 0;
+  padding-right: 1rem;
 }
 
 .overview {
@@ -109,7 +143,146 @@ header button {
   position: relative;
   top: 140px;
   width: 60%;
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
   padding: 1.5rem;
+  word-wrap: break-word;
+  font-size: 2vh;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  /* border: red solid; */
+}
+
+.about-div {
+  position: relative;
+  top: 120px;
+  /* border: red solid; */
+  display: flex;
+  justify-content: end;
+}
+
+.title-about {
+  display: flex;
+  width: 60%;
+  height: 170px;
+  background-color: var(--wierd-green);
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.about-container {
+  width: 80%;
+  height: 50vh;
+  background-color: var(--white);
+  position: relative;
+  top: 23vh;
+  box-shadow: 0px 0px 50px rgb(120, 120, 120);
+  padding: 2.5rem;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+/* skills */
+#skills {
+  /* border: red solid; */
+  padding-top: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-title {
+  font-size: 80px;
+  /* border: red solid; */
+  text-align: center;
+}
+
+.my {
+  color: var(--wierd-green);
+}
+
+.skills-container {
+  /* border: blue solid; */
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 50vh;
+  justify-content: space-around;
+  /* animation: slideLeft 20s linear infinite; */
+}
+
+.skill-card {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.skill-card h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.line {
+  position: relative;
+  left: 10%;
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: var(--wierd-green);
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 600px) {
+  header li {
+    margin: auto;
+  }
+  header button {
+    margin: 10px 0.5rem;
+    width: calc(100% - 290px); /* Full width button with padding adjustment */
+  }
+  .fenan {
+    top: 620px;
+    margin: auto;
+    z-index: 2;
+    width: 90%;
+    right: 0;
+    padding-right: 0.5rem;
+  }
+  .purple {
+    /* border: red solid; */
+    width: 100vw;
+  }
+  .title {
+    /* border: red solid; */
+    top: 220px;
+    padding: 0;
+    font-size: 40px;
+  }
+  .title-about {
+    font-size: 12vw;
+  }
+  .overview {
+    top: 130px;
+    width: 100%;
+  }
+  .about-container {
+    font-size: 3.5vw;
+  }
 }
