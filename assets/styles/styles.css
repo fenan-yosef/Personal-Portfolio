@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   width: 0.75rem;
 }
@@ -92,7 +96,7 @@ header ul li a {
 header button {
   margin: 0 2rem;
   /* width: 8rem; */
-  /* height: 50px; */
+  padding: 0.5rem;
   border-radius: 30px;
   background-color: var(--green);
   border: none;
@@ -240,6 +244,46 @@ header button {
   background-color: var(--wierd-green);
 }
 
+/* project */
+#projects {
+  padding-top: 90px;
+  /* height: 100vh; */
+}
+
+.projects-header {
+  /* border: #000 solid; */
+  font-size: 80px;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.projects-container {
+  /* border: red solid; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-cards-container {
+  /* border: gray solid; */
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.projects-cards {
+  margin: 2rem;
+  width: 300px;
+  padding: 10px 1rem;
+  background-color: var(--white);
+  border-radius: 40px;
+}
+
+.projects-cards img {
+  width: 100%;
+}
+
 @keyframes slideLeft {
   0% {
     transform: translateX(100%);
@@ -287,6 +331,9 @@ header button {
   }
   .skills-container {
     flex-direction: column;
+    height: auto;
+  }
+  #projects {
     height: auto;
   }
 }
