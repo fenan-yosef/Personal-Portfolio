@@ -60,6 +60,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  margin: 0 0.1rem;
   z-index: 90;
   padding: 0 10px 10px 0.1rem;
   display: flex;
@@ -93,15 +94,26 @@ header ul li a {
   color: var(--black);
 }
 
+header ul li a:hover {
+  color: var(--wierd-green);
+  transition: all 0.1s ease-in;
+}
+
 header button {
-  margin: 0 2rem;
-  /* width: 8rem; */
+  /* margin: 0 2rem; */
+  width: 7.5rem;
   padding: 0.5rem;
   border-radius: 30px;
   background-color: var(--green);
   border: none;
   font-weight: 800;
   font-size: 18;
+}
+
+header button:hover {
+  cursor: pointer;
+  color: var(--white);
+  transition: all 0.1s ease-in;
 }
 
 .home {
@@ -155,7 +167,20 @@ header button {
 #about {
   height: 100vh;
   width: 100%;
+  /* border: red solid;s */
+}
+
+.model {
+  width: 24%;
   /* border: red solid; */
+  position: relative;
+  top: 230px;
+  left: 60%;
+  z-index: 0;
+}
+
+.model img {
+  width: 100%;
 }
 
 .about-div {
@@ -246,13 +271,14 @@ header button {
 
 /* project */
 #projects {
-  padding-top: 90px;
-  /* height: 100vh; */
+  padding: 70px;
+  height: 100vh;
 }
 
 .projects-header {
-  /* border: #000 solid; */
-  font-size: 80px;
+  /* border: red solid; */
+  font-size: 8vw;
+  text-align: center;
   font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
@@ -278,6 +304,7 @@ header button {
   padding: 10px 1rem;
   background-color: var(--white);
   border-radius: 40px;
+  box-shadow: 0 0 10px gray;
 }
 
 .projects-cards img {
@@ -298,8 +325,8 @@ header button {
     margin: auto;
   }
   header button {
-    margin: 10px 0.5rem;
-    width: calc(100% - 290px); /* Full width button with padding adjustment */
+    /* margin: 10px 0.5rem; */
+    /* width: 6rem; */
   }
   .fenan {
     top: 620px;
@@ -335,5 +362,12 @@ header button {
   }
   #projects {
     height: auto;
+  }
+
+  .model {
+    left: 40%;
+    top: 320px;
+    width: 60%;
+    z-index: -1;
   }
 }
