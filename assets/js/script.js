@@ -26,24 +26,89 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function fadeInElement(element) {
-  element.style.opacity = 0;
-  element.style.transition = "opacity 1s ease";
-  element.style.animation = "fadeIn 1s forwards";
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        element.style.opacity = 0;
+        element.style.transition = "opacity 1s ease";
+        element.style.animation = "fadeIn 1s forwards";
+      } else {
+        element.style.opacity = "";
+        element.style.animation = "";
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(element);
 }
 
 function fadeInFromLeft(element) {
-  element.style.opacity = 0;
-  element.style.transition = "opacity 1s ease";
-  element.style.animation = "fadeInFromLeft 1s forwards";
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        element.style.opacity = 0;
+        element.style.transition = "opacity 1s ease";
+        element.style.animation = "fadeInFromLeft 1s forwards";
+      } else {
+        element.style.opacity = "";
+        element.style.animation = "";
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(element);
 }
 
 function fadeInFromRight(element) {
-  element.style.opacity = 0;
-  element.style.transition = "opacity 1s ease";
-  element.style.animation = "fadeInFromRight 1s forwards";
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        element.style.opacity = 0;
+        element.style.transition = "opacity 1s ease";
+        element.style.animation = "fadeInFromRight 1s forwards";
+      } else {
+        element.style.opacity = "";
+        element.style.animation = "";
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  observer.observe(element);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const myElement = document.getElementById("myElement");
-  fadeInElement(myElement);
+  const purple = document.getElementById("purple");
+  fadeInFromLeft(purple);
+  console.log(purple);
+
+  const inputfield = document.getElementById("contact");
+  fadeInElement(inputfield);
+
+  const webDeveloper = document.getElementById("web-developer");
+  fadeInFromRight(webDeveloper);
+
+  const fenan = document.getElementById("fenan");
+
+  fadeInElement(fenan);
 });
