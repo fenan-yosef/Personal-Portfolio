@@ -116,4 +116,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const aboutP = document.getElementById("about-paragraph");
   fadeInFromLeft(aboutP);
+
+  const skills = document.getElementById("skills");
+  fadeInElement(skills);
+
+  const projectsHeader = document.getElementById("projects-header");
+  fadeInFromRight(projectsHeader);
+
+  for (let i = 1; i < 5; i++) {
+    const cards = document.getElementById(`card${i}`);
+    fadeInElement(cards);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const resumeButton = document.getElementById("resume-button");
+  resumeButton.addEventListener("click", function () {
+    const resumeUrl = "../documents/Profile.pdf";
+    const a = document.createElement("a");
+    a.href = resumeUrl;
+    a.download = "Fenan's_resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    console.log("ulala");
+  });
 });

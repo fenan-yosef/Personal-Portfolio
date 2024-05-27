@@ -219,7 +219,7 @@ header button:hover {
 /* skills */
 #skills {
   /* border: red solid; */
-  padding-top: 80px;
+  padding-top: 10px;
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -267,6 +267,8 @@ header button:hover {
 }
 
 .projects-cards img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--wierd-green);
   width: 100%;
 }
 

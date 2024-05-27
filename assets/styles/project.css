@@ -7,6 +7,7 @@
 /* project */
 #projects {
   overflow: scroll;
+  overflow-x: hidden;
   padding: 2px;
   /* border: blue solid; */
   padding: 90px 1rem 0;
@@ -40,7 +41,7 @@
 .projects-cards {
   margin: 2rem;
   width: 300px;
-  padding: 10px 1rem;
+  padding: 20px 1rem;
   background-color: var(--white);
   border-radius: 40px;
   box-shadow: 0 0 10px gray;
