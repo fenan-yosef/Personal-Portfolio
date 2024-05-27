@@ -170,8 +170,9 @@ header button:hover {
   width: 24%;
   /* border: red solid; */
   position: relative;
-  top: 230px;
+  top: 240px;
   left: 60%;
+  /* border: red solid; */
   z-index: 0;
 }
 
@@ -265,72 +266,8 @@ header button:hover {
   background-color: var(--wierd-green);
 }
 
-/* project */
-#projects {
-  padding: 70px;
-  height: 100vh;
-}
-
-.projects-header {
-  /* border: red solid; */
-  font-size: 8vw;
-  text-align: center;
-  font-weight: 900;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-}
-
-.projects-container {
-  /* border: red solid; */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.projects-cards-container {
-  /* border: gray solid; */
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.projects-cards {
-  margin: 2rem;
-  width: 300px;
-  padding: 10px 1rem;
-  background-color: var(--white);
-  border-radius: 40px;
-  box-shadow: 0 0 10px gray;
-}
-
 .projects-cards img {
   width: 100%;
-}
-
-#contact {
-  height: 100vh;
-  border: red solid;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.left-aside {
-  /* width: 50vw; */
-  border: blue solid;
-  display: flex;
-  justify-content: center;
-}
-
-form {
-  border: #34919c solid;
-  width: 30rem;
-  margin: 100px 0 0;
-}
-
-.right-aside {
-  /* width: 50vw; */
-  border: green solid;
 }
 
 @keyframes slideLeft {
@@ -351,7 +288,7 @@ form {
     width: 6rem;
   }
   .fenan {
-    top: 620px;
+    top: 460px;
     margin: auto;
     z-index: 2;
     width: 90%;
@@ -382,25 +319,53 @@ form {
     flex-direction: column;
     height: auto;
   }
+  .skills-title {
+    font-size: 20vw;
+  }
   #projects {
     height: auto;
   }
 
   .model {
     left: 40%;
-    top: 320px;
+    top: 260px;
     width: 60%;
     z-index: -1;
   }
-  .projects-cards {
-    width: 100%;
-  }
-  #projects {
-    padding: 0;
-  }
-
   input textfield {
     display: block;
     width: 100%;
   }
 }
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }

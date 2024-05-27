@@ -1,0 +1,47 @@
+.project-contact-container {
+  display: flex;
+  flex-direction: column;
+  /* border: blue solid; */
+}
+
+/* project */
+#projects {
+  overflow: scroll;
+  padding: 2px;
+  /* border: blue solid; */
+  padding: 90px 1rem 0;
+  height: 100vh;
+}
+
+.projects-header {
+  /* border: red solid; */
+  font-size: 8vw;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.projects-container {
+  /* border: red solid; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.projects-cards-container {
+  /* border: gray solid; */
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.projects-cards {
+  margin: 2rem;
+  width: 300px;
+  padding: 10px 1rem;
+  background-color: var(--white);
+  border-radius: 40px;
+  box-shadow: 0 0 10px gray;
+}
