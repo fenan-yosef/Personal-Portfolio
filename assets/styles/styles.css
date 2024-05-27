@@ -28,10 +28,6 @@ html {
   border-radius: 10px;
 }
 
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #0c0791;
-} */
-
 body {
   overflow-x: hidden;
   width: 100vw;
@@ -311,6 +307,32 @@ header button:hover {
   width: 100%;
 }
 
+#contact {
+  height: 100vh;
+  border: red solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.left-aside {
+  /* width: 50vw; */
+  border: blue solid;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border: #34919c solid;
+  width: 30rem;
+  margin: 100px 0 0;
+}
+
+.right-aside {
+  /* width: 50vw; */
+  border: green solid;
+}
+
 @keyframes slideLeft {
   0% {
     transform: translateX(100%);
@@ -325,8 +347,8 @@ header button:hover {
     margin: auto;
   }
   header button {
-    /* margin: 10px 0.5rem; */
-    /* width: 6rem; */
+    margin: 0 0.5rem;
+    width: 6rem;
   }
   .fenan {
     top: 620px;
@@ -369,5 +391,16 @@ header button:hover {
     top: 320px;
     width: 60%;
     z-index: -1;
+  }
+  .projects-cards {
+    width: 100%;
+  }
+  #projects {
+    padding: 0;
+  }
+
+  input textfield {
+    display: block;
+    width: 100%;
   }
 }
