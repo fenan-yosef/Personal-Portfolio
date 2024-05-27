@@ -109,6 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeInFromRight(webDeveloper);
 
   const fenan = document.getElementById("fenan");
-
   fadeInElement(fenan);
+
+  const aboutDiv = document.getElementById("about-div");
+  fadeInFromRight(aboutDiv);
+
+  const aboutP = document.getElementById("about-paragraph");
+  fadeInFromLeft(aboutP);
 });
