@@ -11,7 +11,7 @@
   padding: 2px;
   /* border: blue solid; */
   padding: 90px 1rem 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .projects-header {
@@ -23,7 +23,6 @@
 }
 
 .projects-container {
-  /* border: red solid; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,10 +31,10 @@
 }
 
 .projects-cards-container {
-  /* border: gray solid; */
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .projects-cards {
