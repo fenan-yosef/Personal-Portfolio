@@ -79,6 +79,8 @@ header ul {
   list-style: none;
   background-color: var(--white);
   padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 header li {
@@ -88,6 +90,7 @@ header li {
 header ul li a {
   text-decoration: none;
   color: var(--black);
+  font-weight: 700;
 }
 
 header ul li a:hover {
@@ -170,7 +173,7 @@ header button:hover {
   width: 24%;
   /* border: red solid; */
   position: relative;
-  top: 240px;
+  top: 200px;
   left: 60%;
   /* border: red solid; */
   z-index: 0;
