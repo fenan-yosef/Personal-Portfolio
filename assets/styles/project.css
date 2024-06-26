@@ -14,6 +14,14 @@
   min-height: 100vh;
 }
 
+.git-icon-container {
+  width: 100%;
+  padding: 20px 10px 0 0;
+  /* border: red solid; */
+  display: flex;
+  justify-content: flex-end;
+}
+
 .projects-header {
   /* border: red solid; */
   font-size: 8vw;

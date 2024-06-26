@@ -79,7 +79,7 @@ header ul {
   list-style: none;
   background-color: var(--white);
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.337);
   backdrop-filter: blur(10px);
 }
 
@@ -149,7 +149,7 @@ header button:hover {
   position: absolute;
   top: 170px;
   right: 0;
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
 }
 
 .overview {
@@ -253,6 +253,7 @@ header button:hover {
   margin-right: 20px;
   text-align: center;
   padding: 10px;
+  width: 50%;
 }
 
 .skill-card h3 {
@@ -267,6 +268,10 @@ header button:hover {
   height: 10px;
   border-radius: 20px;
   background-color: var(--wierd-green);
+}
+
+.line-and-title-container {
+  /* border: red solid; */
 }
 
 .projects-cards img {

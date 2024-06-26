@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <link rel="stylesheet" href="assets/styles/contact.css" />
     <link rel="stylesheet" href="assets/styles/project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>My portfolio</title>
   </head>
   <body>
@@ -68,9 +69,11 @@
         </div>
         <div class="skills-container">
           <div class="skill-card">
-            <div>
-              <h3>Profecient Skills</h3>
-              <div class="line"></div>
+            <div class="line-and-title-container">
+              <div class="line-and-title">
+                <h3>Profecient Skills</h3>
+                <div class="line"></div>
+              </div>
             </div>
             <p>
               Data structure and algorithm, responsive designs forntend
@@ -78,7 +81,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <div>
+            <div class="line-and-title-container">
               <h3>FrameWorks / Libraries</h3>
               <div class="line"></div>
             </div>
@@ -86,7 +89,7 @@
           </div>
           <div class="skill-card">
             <div>
-              <div>
+              <div class="line-and-title-container">
                 <h3>Database</h3>
                 <div class="line"></div>
               </div>
@@ -105,30 +108,30 @@
             </div>
             <div class="projects-cards-container">
               <div id="card1" class="projects-cards">
-                <img src="./assets/images/piano.png" alt="" />
-                <i class="fa fa-g"></i>
+                <img src="./assets/images/piano.png" alt="piano image" />
                 <h3>Piano UI</h3>
                 <p>
                   I created a piano app on my free code camp certification
                   course
                 </p>
+                <div class="git-icon-container"><a href="https://github.com/pal-oe"><i class="fa-brands fa-github fa-2xl"></i></a></div>
               </div>
               <div id="card2" class="projects-cards">
                 <img src="./assets/images/lading page.png" alt="" />
-                <i class="fa fa-g"></i>
                 <h3>landing page</h3>
                 <p>
                   I designed a landing page tailored to help business owners better connect with their customers
                 </p>
+                <div class="git-icon-container"><a href="https://github.com/pal-oe/Javascript-Learning-Projects/tree/main/Landing%20Page"><i class="fa-brands fa-github fa-2xl"></i></a></div>
               </div>
               <div id="card3" class="projects-cards">
                 <img src="./assets/images/3d contact.png" alt="" />
-                <i class="fa fa-g"></i>
                 <h3>3D design</h3>
                 <p>
                   I created a 3d contact sending section in a page as my three.js learning projects
                   course
                 </p>
+                <div class="git-icon-container"><a href="https://github.com/pal-oe/Javascript-Learning-Projects/tree/main/My%20portfolio"><i class="fa-brands fa-github fa-2xl"></i></a></div>
               </div>
               <div id="card4" class="projects-cards">
                 <img src="./assets/images/carrent.png" alt="" />
@@ -137,6 +140,7 @@
                 <p>
                   I developed a club managing fullstack web based system as an entrance project to CSEC club ASTU.
                 </p>
+                <div class="git-icon-container"><a href="https://github.com/pal-oe/club-management-CSEC"><i class="fa-brands fa-github fa-2xl"></i></a></div>
               </div>
             </div>
           </div>
@@ -158,6 +162,9 @@
         </section>
       </div>
     </main>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
+    
   </body>
 </html>

@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const resumeButton = document.getElementById("resume-button");
   resumeButton.addEventListener("click", function () {
-    const resumeUrl = "../documents/Profile.pdf";
+    const resumeUrl = "assets/documents/Profile.pdf";
     const a = document.createElement("a");
     a.href = resumeUrl;
     a.download = "Fenan's_resume.pdf";
@@ -143,3 +143,28 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("ulala");
   });
 });
+
+emailjs.init("ZQPZ_8sKYHGV8qpXZ");
+
+// Function to send email
+function sendEmail(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  emailjs.send("service_9hlmtn7", "template_z0gztc9", data).then(
+    function (response) {
+      alert("I have recieved your message, I will get back to you");
+    },
+    function (error) {
+      alert("Failed to send message: " + JSON.stringify(error));
+    }
+  );
+}
+
+document.getElementById("contact-form").addEventListener("submit", sendEmail);
