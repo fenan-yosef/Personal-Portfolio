@@ -152,9 +152,9 @@ function sendEmail(event) {
 
   const formData = new FormData(event.target);
   const data = {
-    name: formData.get("name"),
-    email: formData.get("email"),
+    from_name: formData.get("name"),
     message: formData.get("message"),
+    reply_to: formData.get("email"),
   };
 
   emailjs.send("service_9hlmtn7", "template_z0gztc9", data).then(
